@@ -14,7 +14,7 @@ weatherForm.addEventListener('submit', e => {
   const address = searchAddress.value;
 
   message.textContent = 'Loading...';
-  fetch(`http://localhost:3000/weather?address=${address}`, { mode: 'cors' })
+  fetch(`/weather?address=${address}`, { mode: 'cors' })
     .then(response => {
       return response.json();
     })

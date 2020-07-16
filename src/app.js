@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode');
 const weatherStack = require('./utils/weatherStack');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -110,6 +111,6 @@ app.get('*', (req, res) => {
 });
 
 // Start up server listening at port 3000
-app.listen(3000, () => {
-  console.log('[APP]: listening on http://localhost:3000');
+app.listen(PORT, () => {
+  console.log(`[APP]: listening on ${PORT}`);
 });
