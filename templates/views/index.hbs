@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="assests/weather.png" />
+  <title>Forecast</title>
+</head>
+
+<body>
+  <div class="content">
+    {{>header}}
+    <p>Use this site to get your weather!</p>
+    <form method="GET">
+      <input placeholder="Location">
+      <button>Search</button>
+    </form>
+
+    <p id="message"></p>
+    <p id="description"></p>
+    <p id="temp"></p>
+    <p id="feels-like"></p>
+    <p id="wind-speed"></p>
+    <p id="humidity"></p>
+    <p id="uv-index"></p>
+  </div>
+
+  {{>footer}}
+
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
