@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 // Set up about page route
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About Page',
+    title: 'About',
     name: 'Daegs',
   });
 });
